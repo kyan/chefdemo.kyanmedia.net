@@ -1,5 +1,4 @@
 load 'deploy'
 # Uncomment if you are using Rails' asset pipeline
-load 'deploy/assets'
 load 'config/deploy'
 require "bundler/capistrano"

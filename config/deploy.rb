@@ -13,7 +13,7 @@ default_run_options[:pty] = true
 
 set :scm, :git
 set :deploy_via, :copy
-set :local_repository, "."
+set :repository, "."
 set :branch, "master"
 
 # If you are using Passenger mod_rails uncomment this:
