@@ -1,1 +1,7 @@
 <h1>Welcome! the site only flippin works!!</h1>
+<p>Here's some messages from the database:</p>
+<ul>
+<% @messages.each do |message| %>
+<li><%= message.name %></li>
+<% end %>
+</ul>

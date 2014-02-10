@@ -22,6 +22,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.data_bags_path = "~/.chef/chef/data_bags"
     chef.add_role "chef_demo"
     chef.json = {
+      'build_essential' => {
+        'compiletime' => true
+      },
       "authorization" => {
         "sudo" => {
           "users" => [ "vagrant" ],
