@@ -28,4 +28,6 @@ end
 
 after "deploy:setup", "kyan:vhost:setup"
 after "deploy:setup", "kyan:db:setup"
+after "deploy:finalize_update", "foreman:export"
+after "deploy:create_symlink", "foreman:restart"
 after "deploy:create_symlink", "nginx:reload"
