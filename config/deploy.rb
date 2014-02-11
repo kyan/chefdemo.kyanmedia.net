@@ -3,7 +3,7 @@ require 'capistrano/ext/multistage'
 
 set :stages, %w(production)
 set :default_stage, "production"
-set :application, "demosite.co.uk"
+set :application, "chefdemo.kyan.net"
 
 set :user, "deploy"
 set :use_sudo, false
@@ -21,7 +21,6 @@ namespace :deploy do
   task :start do ; end
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "ln -nfs #{shared_path}/config/application.yml #{release_path}/config/application.yml"
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end

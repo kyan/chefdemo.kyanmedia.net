@@ -1,4 +1,4 @@
-server 'needs a machine', :app, :web, :db, :primary => true
+server '162.13.9.177', :app, :web, :db, :primary => true
 set :branch, "master"
 set :rails_env, 'production'
 set :deploy_to, "/var/www/#{application}"
