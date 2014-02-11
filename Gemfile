@@ -13,6 +13,5 @@ gem 'therubyracer', platforms: :ruby
 gem 'delayed_job_active_record'
 
 group :development do
-  gem 'capistrano', '~> 2.14.1'
-  gem 'capistrano-kyan', :git => "https://github.com/kyan/capistrano-kyan.git", :require => false
+  gem "capistrano-kyan", "~> 0.2.11"
 end

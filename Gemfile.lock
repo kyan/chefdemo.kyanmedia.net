@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/kyan/capistrano-kyan.git
-  revision: f707691ab64d20b3567e51413715bb815d830072
-  specs:
-    capistrano-kyan (0.2.10)
-      capistrano
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -41,6 +34,8 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    capistrano-kyan (0.2.11)
+      capistrano (~> 2.14.1)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -136,8 +131,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capistrano (~> 2.14.1)
-  capistrano-kyan!
+  capistrano-kyan (~> 0.2.11)
   coffee-rails (~> 4.0.0)
   delayed_job_active_record
   foreman
