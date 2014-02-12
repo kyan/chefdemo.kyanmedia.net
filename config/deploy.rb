@@ -3,7 +3,7 @@ require 'capistrano/ext/multistage'
 
 set :stages, %w(production)
 set :default_stage, "production"
-set :application, "chefdemo.kyan.net"
+set :application, "chefdemo.kyanmedia.net"
 
 set :user, "deploy"
 set :use_sudo, false
