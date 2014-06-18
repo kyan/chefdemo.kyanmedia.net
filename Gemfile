@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.2'
+gem 'rails', '4.1.0'
 gem 'foreman'
 
 gem 'pg'
@@ -11,7 +11,8 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'therubyracer', platforms: :ruby
 gem 'delayed_job_active_record'
+gem 'nokogiri'
 
 group :development do
-  gem "capistrano-kyan", "~> 0.2.11"
+  gem "capistrano-kyan"
 end
