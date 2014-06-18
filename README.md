@@ -1,5 +1,3 @@
-== README
-
 # Build
 
 This app is for testing Chef builds. You can commision a box using the command below:
