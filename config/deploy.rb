@@ -27,6 +27,6 @@ end
 
 after "deploy:setup",           "kyan:vhost:setup"
 after "deploy:finalize_update", "kyan:db:symlink"
-after "deploy:finalize_update", "foreman:export"
-after "deploy:create_symlink",  "foreman:restart"
+# after "deploy:finalize_update", "foreman:export"
+# after "deploy:create_symlink",  "foreman:restart"
 after "deploy:create_symlink",  "nginx:reload"
