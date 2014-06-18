@@ -12,9 +12,8 @@ ssh_options[:forward_agent] = true
 default_run_options[:pty] = true
 
 set :scm, :git
-set :deploy_via, :copy
-set :repository, "."
-set :branch, "master"
+set :repository, "git@github.com:kyan/#{application}.git"
+set :deploy_via, :remote_cache
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
