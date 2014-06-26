@@ -13,6 +13,8 @@ gem 'therubyracer', platforms: :ruby
 gem 'delayed_job_active_record'
 gem 'nokogiri'
 
-group :development do
+#gem 'dotenv-rails' # Enviroment vars manager
+
+group :deploy do
   gem "capistrano-kyan"
 end
